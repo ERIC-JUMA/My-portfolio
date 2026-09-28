@@ -2,9 +2,16 @@
 <html lang="en">
 <head>
     <title>ERIC JUMA</title>
+    <style>
+        img {
+            border-radius: 50%;
+       width: 100px; height: 100px;
+     } 
+    </style>
 </head>
 <body>
-    <img src="IMG_20260603_083433_997.jpg" alt="PROFILE PICTURE" width="200" height="200">
+ <img src="IMG_20260603_083433_997.jpg" alt="PROFILE PICTURE" width="200" height="200">
+    <h1>ERIC JUMA</h1>
 <p>An aspiring web developer and IT student </p>
     <a href="About me.html">About Me</a>
     <a href="my_skills.html">My Skills</a>
@@ -39,12 +46,8 @@
     <p>Phone: +254 700 000 000</p>
     <hr>
 <footer>
-    <p>&copy; 2026 Eric Juma. All rights reserved.</p>
+    <p>& copy; 2026 Eric Juma. All rights reserved.</p>
     <p>contact: +254 700 000 000</p>
 </footer>
-    
-    
-
-
 </body>
 </html>
