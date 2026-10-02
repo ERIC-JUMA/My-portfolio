@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ERIC JUMA</title>
+    <style>
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+         }
+         .stars {
+            color: gold;
+        margin: left 10px;   
+         }
+    </style>
+</head>
+
+<body><img src="IMG_20260928_111048_975.jpg" alt="Profile picture" class="profile-pic">
+    <h1>ERIC JUMA</h1>
+    <p>An aspiring web developer and IT student </p>
+    <a href="About me.html">About Me</a>
+    <a href="my_skills.html">My Skills</a>
+    <a href="my_projects.html">My Projects</a>
+    <a href="my_contacts.html">My Contacts</a>
+    <h1>About Me</h1>
+    <p>Welcome to my personal website! I am a passionate web developer and IT student with a strong interest in 
+        creating innovative solutions.</p>
+<hr>
+    <h1>My Skills</h1>
+    <ol>
+        <li>HTML<span class="stars">★★★★★</span></li>
+        <li>CSS<span class="stars">★★★★☆</span></li>
+        <li>JavaScript<span class="stars">★★★☆☆</span></li>
+        <li>Python<span class="stars">★★★☆☆</span></li>
+        <li>Java<span class="stars">★★☆☆☆</span></li>
+    <hr>
+    <h1>Projects</h1>
+    </ol>
+    <li>My portfolio</li>
+    <p>This is my official website showcasing my projects
+         and skills.I used html,CSS and java script.Live demo
+          in https:/my-portfolio-amber-gamma-51.vercel.app.
+    </p>
+    <hr>
+        <li>Calculator</li>
+        <p>A simple calculator which perfoms simple arithmetic functions 
+            such as subtraction ,addittion ,division and multiplication.
+            Technologies used ;HTML,CSS, java script.
+        </p>
+        <hr>
+        <ul>
+        <li>Online shopping page
+        <p>An e-commerce webpage for displaying products and prices.
+            Technologies used; HTML, java script, CSS.
+            Link;https;//github.cm/ERIC-JUMA/My-portfolio.</li>
+        </p>
+        </ul>
+            <hr>
+            <h1>Services</h1>
+<ol>
+    <ul>
+        <li>Web design</li>
+        <p>I design websites that are user friendly and compatible to both pc and 
+            mobile phones</p>
+            <li>Website maintenace</li>
+            <p>I update and fix website basic issues</p>
+            </ul></ol>
+            <hr>
+
+            <h1>My contacts</h1>
+            <div id="contacts">
+                <p  id="email">Email: ericjumashiundu@gmail.com <button onclick="copyEmail()">copy</button></p>
+                <p id="phone">Phone: 0717174694 <button onclick="callme()">call</button><button onclick="whatsApp()"></button></p>
+                <p id="message"></p>
+            </div>
+            <hr>
+            <footer>
+                <p>& copy; 2026 ERIC JUMA. All rights reserved.</p>
+                <p>Contact; 0717174694</p>
+            </footer>
+
+
+    <script>
+        function copyEmail() {
+            const email = "ericjumashiundu@gmail.com";
+            navigator.clipboard.writeText(email)
+                    document.getElementById("message").innerText = "Email copied to clipboard!";
+                    document.getElementById("message").style.color = "green";
+                    setTimeout(() => {
+                        document.getElementById("message").innerText = "";
+                    }, 3000);
+                }
+
+                function callme() {
+                    const phoneNumber = "0717174694";
+                    window.location.href = `tel:${phoneNumber}`;
+                }
+                function whatsApp() {
+                    const phoneNumber = "0717174694";
+                    const message = "Hello, I would like to get in touch with you.";
+                    const encodedMessage = encodeURIComponent(message);
+                    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+                    window.open(whatsappUrl, "_blank");
+                }
+    </script>
+</body>
+</html>
