@@ -34,6 +34,7 @@
         <li>Python<span class="stars">★★★☆☆</span></li>
         <li>Java<span class="stars">★★☆☆☆</span></li>
     <hr>
+
     <h1>Projects</h1>
     </ol>
     <li>My portfolio</li>
@@ -78,9 +79,26 @@
                 <p>& copy; 2026 ERIC JUMA. All rights reserved.</p>
                 <p>Contact; 0717174694</p>
             </footer>
+            <script>
 
+                const githubAPIUrl = "https://api.github.com/users/ERIC-JUMA/repos";
+                fetch(githubAPIUrl)
+                    .then(response => response.json())
+                    .then(data => {
+                        const projectsList = document.createElement("ul");
+                        data.forEach(repo => {
+                            const listItem = document.createElement("li");
+                            const link = document.createElement("a");
+                            link.href = repo.html_url;
+                            link.textContent = repo.name;
+                            listItem.appendChild(link);
+                            projectsList.appendChild(listItem);
+                        });
+                        document.body.appendChild(projectsList);
+                    })
+                    .catch(error => console.error("Error fetching GitHub repositories:", error));
+        
 
-    <script>
         function copyEmail() {
             const email = "ericjumashiundu@gmail.com";
             navigator.clipboard.writeText(email)
